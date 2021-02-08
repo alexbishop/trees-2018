@@ -1,0 +1,70 @@
+\documentclass{standalone} 
+
+\usepackage{tikz}
+\usetikzlibrary{trees}
+
+\begin{document}
+\begin{tikzpicture}[
+	level distance=1.5cm,
+	level 1/.style={sibling distance=3cm},
+	level 2/.style={sibling distance=1cm},
+	level 3/.style={sibling distance=0.2cm,level distance=1cm}
+]
+
+
+\node {$\varepsilon$}
+child { node {$0$}
+	child {node {$00$}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+	}
+	child {node {$01$}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+	}
+	child {node {$02$}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+	}
+}
+child { node {$1$}
+	child {node {$10$}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+	}
+	child {node {$11$}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+	}
+	child {node {$12$}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+	}
+}
+child { node {$2$}
+	child {node {$20$}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+	}
+	child {node {$21$}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+	}
+	child {node {$22$}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+		child[dotted] {node {}}
+	}
+}
+;
+
+\end{tikzpicture}
+\end{document}
